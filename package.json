@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "source": "src/index.html",
+  "staticFiles": {
+    "staticPath": "./public",
+    "staticOutDir": "./dist"
+  },
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "dev": "parcel",
@@ -13,9 +17,11 @@
   "license": "ISC",
   "packageManager": "pnpm@10.10.0",
   "devDependencies": {
+    "@parcel/config-default": "^2.15.1",
     "@types/react": "^19.1.5",
     "@types/react-dom": "^19.1.5",
     "parcel": "^2.15.1",
+    "parcel-reporter-static-files-copy": "^1.5.3",
     "postcss": "^8.5.3",
     "typescript": "^5.8.3"
   },

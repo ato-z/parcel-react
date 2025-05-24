@@ -16,7 +16,7 @@ const Navigation: React.FC = () => {
           <div className="flex space-x-7">
             <div className="hidden md:flex items-center space-x-1">
               <Link to="/" className="py-4 px-2 text-green-500 font-semibold">
-                Parcel + React + React-Router
+                <img src="/logo.svg" alt="logo" className="w-10 h-10" />
               </Link>
             </div>
           </div>

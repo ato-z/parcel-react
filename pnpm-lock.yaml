@@ -27,6 +27,9 @@ importers:
         specifier: ^3.4.17
         version: 3.4.17
     devDependencies:
+      '@parcel/config-default':
+        specifier: ^2.15.1
+        version: 2.15.1(@parcel/core@2.15.1(@swc/helpers@0.5.17))(@swc/helpers@0.5.17)
       '@types/react':
         specifier: ^19.1.5
         version: 19.1.5
@@ -36,6 +39,9 @@ importers:
       parcel:
         specifier: ^2.15.1
         version: 2.15.1(@swc/helpers@0.5.17)
+      parcel-reporter-static-files-copy:
+        specifier: ^1.5.3
+        version: 1.5.3(@parcel/core@2.15.1(@swc/helpers@0.5.17))
       postcss:
         specifier: ^8.5.3
         version: 8.5.3
@@ -1012,6 +1018,10 @@ packages:
 
   package-json-from-dist@1.0.1:
     resolution: {integrity: sha512-UEZIS3/by4OC8vL3P2dTXRETpebLI2NiI5vIrjaD/5UtrkFX/tNbwjTSRAGC/+7CAo2pIcBaRgWmcBBHcsaCIw==}
+
+  parcel-reporter-static-files-copy@1.5.3:
+    resolution: {integrity: sha512-Ukq2SyJYn3GFIPCLamXuQ+2t+0j54llujjOUoRjtmVvfsuGnJDEpMznADeIoKuQDvy0jpxtWzWkQvxqI/j+U4A==}
+    engines: {parcel: ^2.0.0-beta.1}
 
   parcel@2.15.1:
     resolution: {integrity: sha512-sDj8BgTLRsTLwbBnxTKiHB6R9lE0eNHz3umKZkbkVyYI9SgFJU4G5rGaJ5fClEHDYcFFSkBb6iKOk3PqPAWKxw==}
@@ -2414,6 +2424,13 @@ snapshots:
   ordered-binary@1.5.3: {}
 
   package-json-from-dist@1.0.1: {}
+
+  parcel-reporter-static-files-copy@1.5.3(@parcel/core@2.15.1(@swc/helpers@0.5.17)):
+    dependencies:
+      '@parcel/plugin': 2.15.1(@parcel/core@2.15.1(@swc/helpers@0.5.17))
+    transitivePeerDependencies:
+      - '@parcel/core'
+      - napi-wasm
 
   parcel@2.15.1(@swc/helpers@0.5.17):
     dependencies:
